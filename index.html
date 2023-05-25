@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio13</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        body>header {
+            background-color: #181818;
+            padding: 16px 0;
+        }
+
+        body>header h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        .nav-item a {
+            color: rgb(255, 255, 255);
+        }
+
+        .nav-item:hover a {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar-toggle {
+            background-color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bolder;
+        }
+        
+        .nav-link {
+            text-align: center;
+        }
+
+        .carousel-inner img {
+            max-height: 700px;
+        }
+        
+        .texto-inicio {
+            text-align: center;
+            padding: 15px 0;
+            color: rgb(245, 245, 245);
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-header h3 {
+            text-align: center;
+        }
+        
+
+        .card-link a img {
+            height: 35px;
+        }
+
+        .card-link h6 {
+            margin-bottom: 16px;
+        }
+
+        .card-link ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-link li {
+            display: inline;
+            list-style: none;
+            margin-right: 25px;
+        }
+
+        .card-link li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Games EBAC</h1>
+                <button type="button" class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#games">Games</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section id="inicio">
+            <div class="texto-inicio">
+                <h2>Games lançados em 2023</h2>
+                <p>Com vários lançamentos de jogos de peso, o ano de 2023 está agitando (e muito) o mundo dos videogames.</p>
+                <p>Carteiras mais vazias, e jogadores mais felizes (talvez nem todos), é a previsão baseada nos anúncios que vêm aparecendo.</p>
+            </div>
+            <div id="carroseu-identificador"  class="carousel carousel-fade slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="4000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://gamerspoilerbrasil.b-cdn.net/wp-content/uploads/2023/03/WCCFdeadspaceremake8.jpg">
+                        <div class="carousel-caption">
+                            <h2>Dead Space</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVPIlh-C6a13p_ZyZcjzJuZeMvsUBm9MaiSnS-q3H7PIQ07f6MrJ5EPk_Z4qZsOKotg3It1OH2qpROKy31-esdQru4UmYXYn6bsvAaJnFTn5Ot6wSEmMzFfJp2hy5uLTcr_cYP9Yl7I8cvfzHaK0yGDd2jS479hTCfeshqmnahRRE1WFth2Bo3VgWl1w/s1920/Resident_Evil_4_leon_ashley.webp">
+                        <div class="carousel-caption">
+                            <h2>Resident Evil 4</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn1.epicgames.com/offer/236c74b4cd2e4e3099cbe2ebdc9686fd/EGS_DeadIsland2_DeepSilverDambusterStudios_S1_2560x1440-fdc688ce46680914ee3c4a7949ce8a67">
+                        <div class="carousel-caption">
+                            <h2>Dead Island 2</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carroseu-identificador" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carroseu-identificador" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carroseu-identificador" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carroseu-identificador" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carroseu-identificador" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="texto-inicio">
+                <p>Separei para você poder ver, os lançamentos que mais foram bem recebidos e os que ainda vão lançar, mas que tem fortes expectativas sobre si.</p>
+                <p><strong>Confira logo abaixo:</strong></p>
+            </div>
+        </section>
+        <section id="games">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>1º- Terror espacial</h3>
+                        </header>
+                        <img src="https://flowgames.gg/wp-content/uploads/2023/01/image-2023-01-26T123024.828.jpg"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Dead Space</h4>
+                            <div class="card-text">
+                                <p>
+                                    Desenvolvido pelo Motive Studio, da Electronic Arts, o remake de Dead Space entregou uma versão aprimorada que acerta em cheio ao preservar a experiência original e expandir suas qualidades ao mesmo tempo.
+                                </p>
+                                <p>
+                                    A nova versão expandida do jogo de 2008 apresentou uma jogabilidade repaginada, gráficos modernizados e até áudio atualizado, alegrando o coração dos fãs de terror.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://store.playstation.com/pt-br/product/UP0006-PPSA03845_00-BEYONDPS5GAME000" target="_blank" title="Compre na playstore">
+                                            <img src="/imagens/2560px-PlayStation_logo.svg.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.steampowered.com/app/1693980/Dead_Space/" target="_blank" title="Compre na Steam">
+                                            <img src="/imagens/Steam-Logo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.epicgames.com/pt-BR/p/dead-space" target="_blank" title="Compre na Epic Games">
+                                            <img src="/imagens/epic-games-logo-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>24/05/2023 às 15:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>2º- Terror forasteiro</h3>
+                        </header>
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsckaUDr0nE7dcLLlD-Ouz6KcoyozZankqNLYGytSQn-anTyV6nNj0G-y1gaAC0_gethRvjBJK0ipqJL-pjqMP8_HeaP6q_Fhi9rbbfFyymoN_jiaYG3n0Rd8t64FBu9DEXZT5FGAh04RFPSiyuwg2LVyI9Ls763wPdzECnxylQSl1jjgaR4a508ls_w/s1920/Resident_Evil_4_leon_ashley.webp"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Resident Evil</h4>
+                            <div class="card-text">
+                                <p>
+                                    Após quase 20 anos, o clássico do survival horror está de volta! O remake de Resident Evil 4 chegou em março de 2023 e agradou (e muito) a crítica especializada e os fãs.
+                                </p>
+                                <p>
+                                    Desenvolvido com o motor gráfico RE Engine, o jogo é uma recriação fiel ao original, apresentando gráficos e jogabilidade atualizados para deixar a experiência mais moderna, mas sem perder a essência.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://store.playstation.com/pt-br/concept/10004473" target="_blank" title="Compre na playstore">
+                                            <img src="/imagens/2560px-PlayStation_logo.svg.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/" target="_blank" title="Compre na Steam">
+                                            <img src="/imagens/Steam-Logo.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>24/05/2023 às 15:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>3º- Não é terror</h3>
+                        </header>
+                        <img src="https://i0.wp.com/xboxera.com/wp-content/uploads/2023/01/Splash-Screen.jpg?fit=1920%2C1080&ssl=1"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Hi-Fi Rush</h4>
+                            <div class="card-text">
+                                <p>
+                                    De surpresa, a Tango Gameworks lançou Hi-Fi Rush, jogo que mistura ação e ritmo, no finalzinho de janeiro — e que já se tornou um dos mais aclamados do ano.
+                                </p>
+                                <p>
+                                    O game conquistou muitos jogadores pelo gameplay frenético, visual colorido, personagens memoráveis e humor bem equilibrado entre o pastelão e o culto.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.xbox.com/pt-BR/games/store/hi-fi-rush/9NFTC552K3GJ/0010" target="_blank" title="Compre na Xbox">
+                                            <img src="/imagens/xboxlogo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.steampowered.com/app/1817230/HiFi_RUSH/" target="_blank" title="Compre na Steam">
+                                            <img src="/imagens/Steam-Logo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.epicgames.com/pt-BR/p/hi-fi-rush" target="_blank" title="Compre na Epic Games">
+                                            <img src="/imagens/epic-games-logo-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>24/05/2023 às 15:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>4º- AVADA KEDRAVA!!</h3>
+                        </header>
+                        <img src="https://assets.xboxservices.com/assets/13/cf/13cf037e-0e97-4812-90d9-b18791367f09.jpg?n=Hogwarts-Legacy_GLP-Page-Hero-1084_Redesign_1920x1080_01.jpg"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Hogwarts Legacy</h4>
+                            <div class="card-text">
+                                <p>
+                                    Hogwarts Legacy é um RPG que se passa no universo de Harry Potter (antes dos livros) e coloca o jogador como um estudante de Hogwarts, contando com aulas de magia, embates entre as Casas e lutas com varinha.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.playstation.com/pt-br/games/hogwarts-legacy/" target="_blank" title="Compre na playstore">
+                                            <img src="/imagens/2560px-PlayStation_logo.svg.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.xbox.com/pt-BR/games/hogwarts-legacy#purchaseoptions" target="_blank" title="Compre na Xbox">
+                                            <img src="/imagens/xboxlogo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank" title="Compre na Steam">
+                                            <img src="/imagens/Steam-Logo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.epicgames.com/pt-BR/p/hogwarts-legacy" target="_blank" title="Compre na Epic Games">
+                                            <img src="/imagens/epic-games-logo-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>24/05/2023 às 15:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>5º- O cara correndo, lembra?</h3>
+                        </header>
+                        <img src="https://assets.xboxservices.com/assets/1f/c8/1fc8ce3b-60b6-422a-84d3-16858472ccde.jpg?n=745632_GLP-Page-Hero-1084_1920x1080.jpg"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Dead Island 2</h4>
+                            <div class="card-text">
+                                <p>
+                                    Ninguém acreditava, mas 2023 teve Dead Island 2! Após oito anos em desenvolvimento e várias trocas de estúdio, o jogo finalmente chegou com muita pancadaria contra mortos-vivos e humor ácido.
+                                </p>
+                                <p>
+                                    A sequência não deixou os problemas de bastidores afetarem o resultado final, apresentando um RPG de ação bem-humorado, competente e banhado em sangue de zumbis.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://store.playstation.com/pt-br/concept/201061" target="_blank" title="Compre na playstore">
+                                            <img src="/imagens/2560px-PlayStation_logo.svg.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.xbox.com/pt-BR/games/dead-island-2#purchaseoptions" target="_blank" title="Compre na Xbox">
+                                            <img src="/imagens/xboxlogo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.epicgames.com/pt-BR/p/dead-island-2" target="_blank" title="Compre na Epic Games">
+                                            <img src="/imagens/epic-games-logo-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>24/05/2023 às 15:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>6º- Zuoon zuuon</h3>
+                        </header>
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202304/1016/8268df86de0ea6346f0988a35df4640dd84910726b69480b.png"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Star Wars Jedi: Survivor</h4>
+                            <div class="card-text">
+                                <p>
+                                    Sequência direta do aclamado Jedi: Fallen Order, Star Wars Jedi: Survivor retoma a fórmula de mundo aberto e o protagonista Cal Kestis, que agora é um Jedi e precisa lutar contra as forças do Império das sombras.
+                                </p>
+                                <p>
+                                    O jogo apresentou uma aventura divertida, empolgante e com toda a essência de uma história Star Wars, mas deixou a desejar em termos de performance com alguns problemas de desempenho no lançamento.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://store.playstation.com/pt-br/concept/10005114" target="_blank" title="Compre na playstore">
+                                            <img src="/imagens/2560px-PlayStation_logo.svg.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.xbox.com/pt-br/games/store/star-wars-jedi-survivor/9pgc82v0dxfs" target="_blank" title="Compre na Xbox">
+                                            <img src="/imagens/xboxlogo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor/" target="_blank" title="Compre na Steam">
+                                            <img src="/imagens/Steam-Logo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.epicgames.com/pt-BR/p/star-wars-jedi-survivor" target="_blank" title="Compre na Epic Games">
+                                            <img src="/imagens/epic-games-logo-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>25/05/2023 às 08:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>7º- Nem todos estão felizes</h3>
+                        </header>
+                        <img src="https://images4.alphacoders.com/115/1151724.jpg"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Redfall</h4>
+                            <div class="card-text">
+                                <p>
+                                    Redfall é o novo FPS do estúdio Arkane, conhecido por Deathloop, Prey e Dishonored, com estrutura de mundo aberto e elementos multiplayer.
+                                </p>
+                                <p>
+                                    O jogo de tiro, no entanto, teve um lançamento conturbado e não atendeu as expectativas dos jogadores.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.xbox.com/pt-BR/games/redfall" target="_blank" title="Compre na Xbox">
+                                            <img src="/imagens/xboxlogo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.steampowered.com/app/1294810/Redfall/" target="_blank" title="Compre na Steam">
+                                            <img src="/imagens/Steam-Logo.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.epicgames.com/pt-BR/p/redfall" target="_blank" title="Compre na Epic Games">
+                                            <img src="/imagens/epic-games-logo-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>25/05/2023 às 08:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            <h3>8º- Esse é o nome da princesa</h3>
+                        </header>
+                        <img src="https://images6.alphacoders.com/127/1272158.png"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Zelda: Tears of the Kingdom</h4>
+                            <div class="card-text">
+                                <p>
+                                    Um dos jogos mais esperados de 2023, Zelda: Tears of the Kingdom é a sequência direta do aclamado Breath of the Wild.
+                                </p>
+                                <p>
+                                    O jogo é um mergulho em queda livre no conceito de liberdade e na clássica lenda da franquia, expandindo a essência de seu antecessor.
+                                </p>
+                            </div>
+                            <div class="card-link">
+                                <h6>Compre o jogo:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank" title="Compre na nintendo">
+                                            <img src="/imagens/nintendo-logo-1-1.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>25/05/2023 às 08:00</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
